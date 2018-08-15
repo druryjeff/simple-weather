@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+
+body,html,main,.weather, #weather, .weather-grid, .weather-grid ul {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	background: url(../img/rehoboth.png) no-repeat top center;
+	background-size: cover;
+}
+
+.cv {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+/* WEATHER */
+
+.weather {
+	position: relative;
+}
+
+.weather h1 {
+	z-index: 1;
+	margin: 0;
+	color:  #fff;
+}
+
+.weather .weather-temp {
+	font-size: 10rem;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	color: rgba(255,255,255,.1);
+	font-weight: 700;
+}
+.weather .icon {
+	position: relative;
+	z-index: 1;
+}
+
+.weather ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.weather li {
+	float: left;
+	width: 33.3333%;
+	height: 20%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 0 5%;
+	position: relative;
+}
+
+.weather h4 {
+	margin: 0;
+	color: #fff;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: .875rem;
+}
+
+.weather i {
+	font-size: 3rem;
+}
+
+.weather li:first-child{
+	height: 60%;
+	width: 100%;
+	float: none;
+}
+
+.weather li:first-child i {
+	font-size: 10rem;
+}
+
+.weather li:nth-child(odd):not(:first-child) {
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.4));
+}
+
+.weather li:nth-child(even) {
+	background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2));
+}
